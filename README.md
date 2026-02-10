@@ -9,3 +9,7 @@
 - Create an Outlet in Body component.
 - Create a Footer component inside the Body.js
 - To create a Login Components
+- Install the axios
+- CORS - Install in backend => add middleware to with configurations: origin, credentionals: true,
+- Whenever you are making an API call so pass => {withCredentials: true}
+- Install the react-redux and redux-toolkit
