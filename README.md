@@ -14,3 +14,6 @@
 - Whenever you are making an API call so pass => {withCredentials: true}
 - Install the react-redux and redux-toolkit
 - Create a configureStore => Provider => createSlice => add reducer to store
+- Login and see if your data is coming properly in the store
+- Update the Navbar while login the user
+- Refector our code to add constants file + create a components folder
