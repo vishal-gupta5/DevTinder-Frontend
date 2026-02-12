@@ -4,10 +4,12 @@ import { BrowserRouter, Routes, Route } from "react-router";
 import Body from "./components/Body";
 import Login from "./components/Login";
 import Profile from "./components/Profile";
+import { Provider } from "react-redux";
+import store from "./utils/store";
 
 const App = () => {
   return (
-    <div>
+    <Provider store={store}>
       <BrowserRouter basename="/">
         <Routes>
           <Route path="/" element={<Body />}>
@@ -16,7 +18,7 @@ const App = () => {
           </Route>
         </Routes>
       </BrowserRouter>
-    </div>
+    </Provider>
   );
 };
 
