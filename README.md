@@ -13,3 +13,4 @@
 - CORS - Install in backend => add middleware to with configurations: origin, credentionals: true,
 - Whenever you are making an API call so pass => {withCredentials: true}
 - Install the react-redux and redux-toolkit
+- Create a configureStore => Provider => createSlice => add reducer to store
