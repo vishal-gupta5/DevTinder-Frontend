@@ -5,7 +5,7 @@ import { useSelector } from "react-redux";
 const Profile = () => {
   const user = useSelector((store) => store.user);
   return user ? (
-    <div className="min-h-screen">
+    <div className="min-h-screen mb-10">
       <EditProfile user={user} />
     </div>
   ) : null;
