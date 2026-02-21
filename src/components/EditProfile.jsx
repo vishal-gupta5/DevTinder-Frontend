@@ -6,12 +6,12 @@ import { useDispatch } from "react-redux";
 import { addUser } from "../utils/slices/userSlice";
 
 const EditProfile = ({ user }) => {
-  const [firstName, setFirstName] = useState(user.firstName);
-  const [lastName, setLastName] = useState(user.lastName);
-  const [age, setAge] = useState(user.age);
-  const [about, setAbout] = useState(user.about);
-  const [gender, setGender] = useState(user.gender);
-  const [photoURL, setPhotoURL] = useState(user.photoURL);
+  const [firstName, setFirstName] = useState(user.firstName || "");
+  const [lastName, setLastName] = useState(user.lastName || "");
+  const [age, setAge] = useState(user.age || "");
+  const [about, setAbout] = useState(user.about || "");
+  const [gender, setGender] = useState(user.gender || "");
+  const [photoURL, setPhotoURL] = useState(user.photoURL || "");
   const [error, setError] = useState("");
   const [showToast, setshowToast] = useState(false);
 
@@ -119,7 +119,15 @@ const EditProfile = ({ user }) => {
         </div>
 
         <UserCard
-          user={{ _id, firstName, lastName, photoURL, about, age, gender }}
+          user={{
+            _id: user._id,
+            firstName,
+            lastName,
+            photoURL,
+            about,
+            age,
+            gender,
+          }}
         />
       </div>
       {showToast && (
