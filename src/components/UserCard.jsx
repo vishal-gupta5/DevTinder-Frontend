@@ -21,7 +21,7 @@ const UserCard = ({ user }) => {
     }
   };
 
-  if (!user) return;
+  if(!user) return;
   
 
   return (
