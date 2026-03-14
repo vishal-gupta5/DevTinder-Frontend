@@ -36,4 +36,7 @@
     - SignUp on AWS
     - Launch Instance
     - chmod 400 <secret>.pem
-    - ssh i comment
+    - ssh -i "DevTinder-Secret.pem" ubuntu@ec2-65-0-169-225.ap-south-1.compute.amazonaws.com
+    - Install the exact version of node.js
+    - git clone 
+    
