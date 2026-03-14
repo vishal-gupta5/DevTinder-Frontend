@@ -39,4 +39,14 @@
     - ssh -i "DevTinder-Secret.pem" ubuntu@ec2-65-0-169-225.ap-south-1.compute.amazonaws.com
     - Install the exact version of node.js
     - git clone 
-    
+        - Frontend
+            - npm install -> Depandancies
+            - npm run build
+            - sudo apt update
+            - sudo apt install nginx
+            - sudo systemctl start nginx
+            - sudo systemctl enable nginx
+            - copy code from dist(build files) to /var/www/html
+            - sudo scp -r dist/* /var/www/html
+            - enable PORT :80 of your instance
+
