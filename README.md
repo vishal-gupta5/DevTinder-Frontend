@@ -29,3 +29,11 @@
 - Features - Accept/Reject connection request
 - Features - send/ignore the user card from the feed.
 
+
+
+    # Deployement
+
+    - SignUp on AWS
+    - Launch Instance
+    - chmod 400 <secret>.pem
+    - ssh i comment
